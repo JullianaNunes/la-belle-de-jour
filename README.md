@@ -68,7 +68,17 @@ A página **Peças do ateliê** substitui a antiga página Projetos; `/projetos`
 7. Opcionalmente preencha `receita` com o slug de uma receita existente e `bastidores` com título, texto e foto de cada etapa.
 8. Somente quando os dados estiverem prontos, altere `publicado: false` para `publicado: true`.
 
-O modelo permanece como rascunho: não é exibido como peça real e não contém valores ou fotos inventados. Enquanto não houver peças publicadas, o catálogo mostra um convite para conhecer o Instagram.
+O modelo permanece como rascunho: não é exibido como peça real e não contém valores ou fotos inventados. Enquanto não houver peças publicadas, o catálogo mostra seis cards de prévia com espaço para fotografias e um convite para conhecer o Instagram. Assim que você publicar a primeira peça, os cards de prévia dão lugar aos cards das peças reais, com filtros e links para os detalhes. A quantidade de peças publicadas não é limitada a seis.
+
+Por exemplo, salve uma foto em `public/images/pecas/minha-peca.jpg`, copie o modelo para `pecas/minha-peca.md`, preencha os dados e substitua `fotos: []` por:
+
+```yaml
+fotos:
+  - caminho: "/images/pecas/minha-peca.jpg"
+    legenda: "Descrição da fotografia da minha peça"
+```
+
+Depois, defina `publicado: true`. Para mostrar uma criação apenas como trabalho já feito, use `status: "Portfólio"`.
 
 ### Contato para encomendas
 
