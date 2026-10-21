@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Instagram } from "lucide-react";
+import { ArrowRight, ImagePlus, Instagram } from "lucide-react";
 import {
   pieces,
   priceLabel,
@@ -185,17 +185,34 @@ export default function Projects() {
           )}
         </>
       ) : (
-        <div className="soft-panel catalog-welcome">
-          <span className="eyebrow">O catálogo está florescendo</span>
-          <h2>Cada peça tem seu tempo</h2>
-          <p>
-            Estou preparando as fotos e os detalhes das criações. Enquanto isso,
-            conheça meu trabalho e converse comigo pelo Instagram.
-          </p>
-          <a className="button" href={instagram} {...external}>
-            <Instagram size={18} /> Conhecer o ateliê
-          </a>
-        </div>
+        <section className="catalog-preview" aria-label="Próximas criações do ateliê">
+          <div className="card-grid">
+            {Array.from({ length: 6 }, (_, index) => (
+              <article className="recipe-card piece-placeholder" key={index}>
+                <div className="piece-cover piece-photo-placeholder">
+                  <ImagePlus size={40} strokeWidth={1} aria-hidden="true" />
+                  <span>Foto em breve</span>
+                </div>
+                <div className="card-body">
+                  <span className="eyebrow">Feito à mão · {String(index + 1).padStart(2, "0")}</span>
+                  <h2 className="card-title">Uma nova criação</h2>
+                  <p>Em breve, uma peça feita por mim, com seus detalhes e sua história.</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="soft-panel catalog-welcome">
+            <span className="eyebrow">O catálogo está florescendo</span>
+            <h2>Cada peça tem seu tempo</h2>
+            <p>
+              Estou preparando as fotos e os detalhes das criações. Enquanto isso,
+              conheça meu trabalho e converse comigo pelo Instagram.
+            </p>
+            <a className="button" href={instagram} {...external}>
+              <Instagram size={18} /> Conhecer o ateliê
+            </a>
+          </div>
+        </section>
       )}
       <InstagramGallery />
     </main>
