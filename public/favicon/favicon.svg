@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="17" fill="#224C98"/><text x="32" y="42" text-anchor="middle" font-family="Georgia,serif" font-size="34" fill="white">L</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Flor La belle de jour</title>
+  <g stroke="#224C98" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 32C27 21 31 6 39 4C49 1 43 23 32 32"/>
+    <path d="M29 32C18 34 10 26 12 19C15 10 26 19 30 30"/>
+    <path d="M33 32C42 23 59 22 59 29C59 37 43 38 33 34"/>
+    <path d="M32 35C42 41 45 56 39 59C31 63 28 44 30 35"/>
+    <path d="M28 34C17 39 7 51 12 54C18 58 28 44 30 36"/>
+    <circle cx="31" cy="33" r="2.5"/>
+  </g>
+</svg>
