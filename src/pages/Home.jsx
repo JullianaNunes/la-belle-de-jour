@@ -83,12 +83,14 @@ function Home() {
             </p>
             <span className="text-link">Encontrar uma receita →</span>
           </Link>
+          {/* Ferramentas em testes: descomentar quando estiverem prontas.
           <Link className="feature-card" to="/ferramentas">
             <span className="eyebrow">03 · Uma mãozinha</span>
             <h3>Fios e medidas</h3>
             <p>Estime o consumo, calcule pontos e compare seus materiais.</p>
             <span className="text-link">Abrir ferramentas →</span>
           </Link>
+          */}
         </div>
         {pieces.length > 0 && (
           <>
