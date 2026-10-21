@@ -52,3 +52,4 @@ As telas estão em `src/pages/`: `Home.jsx`, `Library.jsx`, `Recipe.jsx`, `Proje
 ## Composição da tela inicial
 
 A Home segue a referência enviada: letreiro ampliado à esquerda, retrato em moldura inclinada à direita, botão abaixo do título e três chamadas sob o retrato. A foto mostrada na referência não foi incorporada: para usar sua foto real, adicione `src/assets/foto-criadora.jpg` e execute o build novamente.
+
