@@ -47,8 +47,8 @@ export function InstagramGallery() {
     <section className="atelier-section">
       <div className="section-heading">
         <div>
-          <span className="eyebrow">Do Instagram para o ateliê</span>
-          <h2>Entre fios e fotografias</h2>
+          {/* <span className="eyebrow">Do Instagram para o ateliê</span> */}
+          <h2>Do Instagram para o ateliê</h2>
         </div>
         <a className="text-link" href={instagram} {...external}>
           <Instagram size={17} /> Ver perfil
