@@ -29,7 +29,8 @@ function Header() {
             Início
           </NavLink>
           <NavLink to="/receitas">Receitas</NavLink>
-          <NavLink to="/projetos">Projetos</NavLink>
+          <NavLink to="/pecas">Peças do ateliê</NavLink>
+          <NavLink to="/ferramentas">Ferramentas</NavLink>
           <NavLink to="/sobre">Sobre</NavLink>
           <a href={insta} {...external} className="instagram">
             <Instagram size={17} /> @bellejour.crochet
@@ -50,7 +51,8 @@ function Footer() {
         <nav aria-label="Navegação do rodapé">
           <Link to="/">Início</Link>
           <Link to="/receitas">Receitas</Link>
-          <Link to="/projetos">Projetos</Link>
+          <Link to="/pecas">Peças do ateliê</Link>
+          <Link to="/ferramentas">Ferramentas</Link>
           <Link to="/sobre">Sobre</Link>
           <a href={insta} {...external}>
             Instagram
