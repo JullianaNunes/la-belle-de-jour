@@ -1756,16 +1756,18 @@ button:disabled {
 }
 
 .piece-cover {
-    aspect-ratio: 4/5;
-    background: #e5edfa;
-    display: grid;
-    place-items: center
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .piece-cover img {
     width: 100%;
     height: 100%;
-    object-fit: cover
+    min-height: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
 }
 
 .piece-layout {
