@@ -30,7 +30,9 @@ function Header() {
           </NavLink>
           <NavLink to="/receitas">Receitas</NavLink>
           <NavLink to="/pecas">Peças do ateliê</NavLink>
+          {/* Ferramentas em testes: descomentar quando estiverem prontas.
           <NavLink to="/ferramentas">Ferramentas</NavLink>
+          */}
           <NavLink to="/sobre">Sobre</NavLink>
           <a href={insta} {...external} className="instagram">
             <Instagram size={17} /> @bellejour.crochet
@@ -52,7 +54,9 @@ function Footer() {
           <Link to="/">Início</Link>
           <Link to="/receitas">Receitas</Link>
           <Link to="/pecas">Peças do ateliê</Link>
+          {/* Ferramentas em testes: descomentar quando estiverem prontas.
           <Link to="/ferramentas">Ferramentas</Link>
+          */}
           <Link to="/sobre">Sobre</Link>
           <a href={insta} {...external}>
             Instagram
