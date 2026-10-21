@@ -40,7 +40,7 @@ function About() {
             <p>
               O nome veio da música <em>La Belle de Jour</em>, de Alceu Valença.
               Sempre que meu pai escuta essa música, ele diz que ela é minha.
-              Eu sempre gostei dela e dessa ligação que meu pai fez comigo.
+              Eu sempre amo ela e essa ligação que meu pai fez comigo.
             </p>
             <p>
               Na hora de escolher um nome para a marca, La belle de jour pareceu
