@@ -1,19 +1,16 @@
 ---
-publicado: false
-titulo: "Nome da sua peça"
+publicado: true
+titulo: "Vestido Caju"
 categoria: "Vestuário"
 status: "Sob encomenda"
-descricao: "Descreva aqui sua peça real."
-fotos: []
-# fotos:
-#   - caminho: "/images/pecas/nome-frente.jpg"
-#     legenda: "Vista de frente"
-#   - caminho: "/images/pecas/nome-detalhe.jpg"
-#     legenda: "Detalhe dos pontos"
+descricao: "Vestido em crochê laranja, com recortes na cintura e saia de pontos vazados com pontas alongadas. Uma criação cheia de textura e movimento, na cor dos fins de tarde de verão."
+fotos:
+  - caminho: "/images/pecas/vestido-caju.jpeg"
+    legenda: "Vista de frente"
 preco:
   type: "quote"
   min: null
-  max: null
+  max: 400
 variacao_preco: "O orçamento depende do tamanho, fio e aplicações escolhidos."
 fio: ""
 cores: []
