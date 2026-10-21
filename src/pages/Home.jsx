@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Instagram, BookOpen } from "lucide-react";
 import { recipes } from "../data/recipes";
 import { Card, insta, external } from "../components/Layout";
+import { pieces } from "../data/atelier";
+import { PieceCard, InstagramGallery } from "./Projects";
 import lettering from "../assets/la-belle-de-jour-letreiro.png";
 
 // Coloque sua foto em src/assets/foto-criadora.jpg (ou png/webp) para vê-la aqui.
@@ -59,6 +61,53 @@ function Home() {
           </div>
         </div>
       </section>
+      <section className="shell atelier-section">
+        <div className="section-heading">
+          <div>
+            <span className="eyebrow">O ateliê está de portas abertas</span>
+            <h2>Para vestir, criar e se inspirar</h2>
+          </div>
+        </div>
+        <div className="feature-grid">
+          <Link className="feature-card" to="/pecas">
+            <span className="eyebrow">01 · Feito à mão</span>
+            <h3>Peças do ateliê</h3>
+            <p>Conheça as criações e converse sobre uma peça para você.</p>
+            <span className="text-link">Explorar peças →</span>
+          </Link>
+          <Link className="feature-card" to="/receitas">
+            <span className="eyebrow">02 · Ponto por ponto</span>
+            <h3>Seu próximo projeto</h3>
+            <p>
+              Receitas para acompanhar no seu ritmo, com contador de carreiras.
+            </p>
+            <span className="text-link">Encontrar uma receita →</span>
+          </Link>
+          {/* Ferramentas em testes: descomentar quando estiverem prontas.
+          <Link className="feature-card" to="/ferramentas">
+            <span className="eyebrow">03 · Uma mãozinha</span>
+            <h3>Fios e medidas</h3>
+            <p>Estime o consumo, calcule pontos e compare seus materiais.</p>
+            <span className="text-link">Abrir ferramentas →</span>
+          </Link>
+          */}
+        </div>
+        {pieces.length > 0 && (
+          <>
+            <div className="section-heading atelier-section">
+              <h2>Saídas do ateliê</h2>
+              <Link to="/pecas" className="text-link">
+                Todas as peças →
+              </Link>
+            </div>
+            <div className="card-grid">
+              {pieces.slice(0, 3).map((p) => (
+                <PieceCard key={p.slug} piece={p} />
+              ))}
+            </div>
+          </>
+        )}
+      </section>
       <section className="home-recipes">
         <div className="shell">
           <div className="section-heading">
@@ -77,6 +126,9 @@ function Home() {
           </div>
         </div>
       </section>
+      <div className="shell">
+        <InstagramGallery />
+      </div>
       <section className="social-band shell">
         <BookOpen size={29} strokeWidth={1.3} />
         <div>
